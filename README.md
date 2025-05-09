@@ -38,7 +38,7 @@ React
 
 Vite
 
-JavaScript (ES6+)
+JavaScript
 
 PokéAPI
 
@@ -48,7 +48,7 @@ Tailwind CSS (opsional, jika digunakan)
 pgsql
 Salin
 Edit
-Pokemon-Azis/
+Pokemon-apps/
 ├── public/
 ├── src/
 │   ├── components/
