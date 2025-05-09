@@ -1,4 +1,4 @@
-# 🐾 Pokemon-Azis
+# 🐾 Pokemon-Apps
 Selamat datang di Pokemon-Apps! Proyek ini merupakan implementasi sederhana namun powerful dari React menggunakan konsep useReducer untuk manajemen state. Cocok bagi Anda yang ingin mempelajari React lebih dalam dengan pola state management yang rapi dan scalable.
 
 
