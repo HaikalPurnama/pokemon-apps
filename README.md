@@ -2,11 +2,11 @@
 Selamat datang di Pokemon-Apps! Proyek ini merupakan implementasi sederhana namun powerful dari React menggunakan konsep useReducer untuk manajemen state. Cocok bagi Anda yang ingin mempelajari React lebih dalam dengan pola state management yang rapi dan scalable.
 
 
-![image](![Screenshot 2025-05-09 223829](https://github.com/user-attachments/assets/bd097e12-0326-4fa4-92b3-4fed237a70ee)
+(![Screenshot 2025-05-09 223829](https://github.com/user-attachments/assets/bd097e12-0326-4fa4-92b3-4fed237a70ee)
 
-![image]![Screenshot 2025-05-09 223845](https://github.com/user-attachments/assets/0f178a7e-0405-4b1a-8fba-aa15e80945c7)
+[Screenshot 2025-05-09 223845](https://github.com/user-attachments/assets/0f178a7e-0405-4b1a-8fba-aa15e80945c7)
 
-![image]![Screenshot 2025-05-09 223858](https://github.com/user-attachments/assets/b3efcc59-82b0-499f-b925-53869ea9c405)
+[Screenshot 2025-05-09 223858](https://github.com/user-attachments/assets/b3efcc59-82b0-499f-b925-53869ea9c405)
 
 
 
