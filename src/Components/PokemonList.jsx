@@ -95,7 +95,7 @@ function PokemonList() {
   return (
     <div className="pokemon-list-container">
       <div className="header">
-        <div className="path">Pokémon-azis</div>
+        <div className="path">Pokémon-Go</div>
         <div className="logo">
           <img src="/pokeball.png" alt="Pokemon" className="pokemon-icon" />
           <h1>Pokémon</h1>

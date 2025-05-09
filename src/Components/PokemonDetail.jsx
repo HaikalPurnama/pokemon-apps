@@ -33,23 +33,23 @@ const pokemonData = [
   { id: 25, name: 'Ekans', number: '0023', type: 'Electric', image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png', health: 999, attack: 999, defense: 999 },
 ];
 
-  
+
 
 function PokemonDetail() {
   const { id } = useParams();
   const [pokemon, setPokemon] = useState(null);
-  
+
   useEffect(() => {
     // Check if we have this Pokemon in sessionStorage
     const storedPokemon = sessionStorage.getItem(`pokemon_${id}`);
-    
+
     if (storedPokemon) {
       setPokemon(JSON.parse(storedPokemon));
     } else {
       // In a real app, this would be an API call
       const foundPokemon = pokemonData.find(p => p.id === parseInt(id));
       setPokemon(foundPokemon);
-      
+
       // Store in sessionStorage
       if (foundPokemon) {
         sessionStorage.setItem(`pokemon_${id}`, JSON.stringify(foundPokemon));
@@ -64,45 +64,45 @@ function PokemonDetail() {
   return (
     <div className="pokemon-detail-container">
       <div className="detail-header">
-        <div className="path">Pokémon-azis</div>
+        <div className="path">Pokémon-Go</div>
       </div>
-      
+
       <div className="pokemon-detail-card">
         <div className="pokemon-number">#{pokemon.number}</div>
-        
+
         <div className="pokemon-image-container">
           <img src={pokemon.image} alt={pokemon.name} className="pokemon-detail-image" />
         </div>
-        
+
         <div className="pokemon-name-detail">
           <h2>{pokemon.name}</h2>
           <img src={pokemon.image} alt={pokemon.name} className="pokemon-thumbnail" />
         </div>
-        
+
         <div className="pokemon-stats">
           <div className="stat">
             <div className="stat-name">Health</div>
             <div className="stat-value">{pokemon.health} from 1000</div>
             <div className="stat-bar">
-              <div 
-                className="stat-fill" 
+              <div
+                className="stat-fill"
                 style={{ width: `${(pokemon.health / 1000) * 100}%` }}
               ></div>
             </div>
           </div>
-          
+
           <div className="stat">
             <div className="stat-name">Attack</div>
             <div className="stat-value">{pokemon.attack}</div>
           </div>
-          
+
           <div className="stat">
             <div className="stat-name">Defense</div>
             <div className="stat-value">{pokemon.defense}</div>
           </div>
         </div>
       </div>
-      
+
       <Link to="/" className="back-button">Back to List</Link>
     </div>
   );
